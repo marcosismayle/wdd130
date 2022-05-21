@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+}
+
+header img {
+    width: 100%;
+}
+
+body {
+    background-color: gray;
+}
+
+main {
+    padding: 50px 50px;
+    text-align: center;
+}
+
+main img {
+    width: 20%;
+    margin-right: 80px;
+    border: solid rgb(78, 73, 73);
+    border-radius: 100%;
+    border-width: 15px;
+}
