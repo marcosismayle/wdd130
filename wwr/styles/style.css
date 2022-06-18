@@ -259,7 +259,6 @@ footer .social img {
 #rivers-content {
     max-width: 1600px;
     margin: 0 auto;
-    text-shadow: #030303;
 }
 
 .rivers-grid {
@@ -282,7 +281,6 @@ footer .social img {
     grid-row: 1/2;
     width: 80%;
     align-self: center;
-    align-items: left;
 }
 
 .gray-canyon-text {
@@ -312,7 +310,6 @@ footer .social img {
     grid-row: 3/4;
     width: 80%;
     align-self: center;
-    align-items: left;
 }
 
 @media screen and (max-width: 900px) {
