@@ -314,6 +314,12 @@ footer .social img {
 
 /*Contact Us*/
 
+.contactus-title {
+    color: var(--secondary);
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
 form {
     /* Center the form on the page */
     margin: 0 auto;
@@ -322,6 +328,8 @@ form {
     padding: 1em;
     border: 1px solid #CCC;
     border-radius: 1em;
+    color: var(--secondary);
+    font-family: var(--paragraph-font);
   }
   
   ul {
