@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Patrick+Hand&display=swap');
+
+:root {
+    /* colors palette */
+    --primary-color: #124E78   ;
+    --secondary-color: #F0F0C9 ;
+    --accent1-color: #F2BB05;
+    --accent2-color: #6E0E0A;
+  
+    /* chosen font(s) */
+    --heading-font: "Pacifico";
+    --paragraph-font: "Patrick Hand", Helvetica, sans-serif;
+  
+    /* site colors */
+    --headline-color-on-white: #6E0E0A;
+    --headline-color-on-color: #6E0E0A;
+    --paragraph-color-on-white: #124E78;
+    --paragraph-color-on-color: #6E0E0A;
+    --paragraph-background-color: #F2BB05  ;
+    --nav-link-color: #124E78;
+    --nav-background-color: #F2BB05;
+    --nav-hover-link-color: #F0F0C9;
+    --nav-hover-background-color: #124E78;
+  }
+
+  body {
+    background-color: var(--accent1);
+    font-family: var(--paragraph-font);
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
