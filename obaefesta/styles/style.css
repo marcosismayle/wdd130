@@ -43,6 +43,9 @@ header {
     grid-template-columns: 150px auto;
     background-color: var(--nav-background-color);
     max-height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
 }
 
 #logo_link {
