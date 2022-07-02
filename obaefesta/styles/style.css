@@ -200,6 +200,9 @@ footer .social img {
         display: block;
         
     }
+    .carousel-item img {
+        padding-top: 120px;
+    }
     .home-title, .rent-items {
         font-size: 15px;
     }
