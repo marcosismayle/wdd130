@@ -192,6 +192,7 @@ footer .social img {
     }
     header {
         min-height: 120px;
+        position: absolute;
     }
     nav a {
         text-align: center;
