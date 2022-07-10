@@ -24,27 +24,21 @@
   }
 
 body {
-    background-color: white;
-    font-family: var(--paragraph-font);
-    font-size: 22px;
     margin: 0;
     padding: 0;
-}
-
-#content {
     max-width: 1600px;
-    margin: 0 auto;
 }
 
 /* Header */
 
 header {
+    font-family: var(--paragraph-font);
     display: grid;
     grid-template-columns: 150px auto;
     background-color: var(--nav-background-color);
     max-height: 80px;
-    position: fixed;
     width: 100%;
+    position: fixed;
     z-index: 3;
 }
 
@@ -67,8 +61,8 @@ nav a {
     color: var(--nav-link-color);
     text-decoration: none;
     font-size: 35px;
-    padding-top: 10px;
-    margin-right: 80px;
+    padding-top: 12px;
+    margin-right: 200px;
 }
 
 nav a:hover {
@@ -78,27 +72,24 @@ nav a:hover {
 
 /* Hero */
 
-#carousel-hero h2 {
-    color: var(--headline-color-on-color);
-    font-family: var(--heading-font);
-    margin-top: 100px;
-    text-shadow: 2px 2px white;
+#carousel-hero img {
+    padding-top: 80px;
 }
 
 /* Main */
 
-.home-title, .rent-items {
+.home-title, .rent-items, .aboutus-title {
     text-align: center;
 }
 
-.home-title h1 {
+.home-title h1, .aboutus-title h1{
     font-family: var(--heading-font);
     font-size: 4em;
     color: var(--headline-color-on-color);
     margin-top: 80px;
 }
 
-.home-title p, .rent-items p {
+.home-title p, .rent-items p, .aboutus-text p {
     color: var(--secondary-color);
     font-size: 32px;
     padding: 80px;
@@ -151,6 +142,7 @@ hr {
 /* Footer */
 
 footer {
+    font-family: var(--paragraph-font);
     background-color: var(--nav-background-color);
     padding: 25px 50px;
     margin-top: 100px;
@@ -182,38 +174,76 @@ footer .social img {
     padding-top: 15px;
 }
 
+/* About Us */
+
+#hero img {
+    width: 100%;
+    padding-top: 80px;
+}
+
+.aboutus-text img {
+    max-width: 30%;
+    float: left;
+    margin: 90px;
+}
+
+.aboutus-text {
+    text-align: justify;
+}
+
+.aboutus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.aboutus-grid h2{
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+    text-align: center;
+    padding-top: 15px;
+}
+
+.mission, .vision, .value {
+    border: solid var(--paragraph-background-color);
+    width: 80%;
+    height: 80%;
+    margin: 50px;
+}
+
+.mission p, .vision p, .value p {
+    text-align: center;
+    padding: 10px;
+}
+
 @media screen and (max-width: 900px) {
-    .items-grid, .home-grid {
+    #carousel-hero, .home, .aboutus, .items-grid , .aboutus-grid{
         display: block;
-        height: auto;
     }
-    nav, footer {
+    #carousel-hero img, #hero img {
+        padding-top: 0;
+    }
+    nav, footer, .aboutus-grid {
         flex-direction: column;
     }
     header {
-        min-height: 120px;
-        position: absolute;
+        min-height: 140px;
+        position: sticky;
     }
     nav a {
-        text-align: center;
-        font-size: medium;
-        display: block;
-        
-    }
-    .carousel-item img {
-        padding-top: 120px;
-    }
-    .home-title, .rent-items {
+        width: 80%;
+        text-align: left;
         font-size: 15px;
+        display: block;
     }
-    .home-title p, .rent-items p {
+    .home-title p, .rent-items p, .aboutus-text p {
         font-size: 20px;
-    }
-    #background {
-        display: none;
     }
     footer {
         margin-top: 25px;
         text-align: center;
+    }
+    /*About Us */
+    .aboutus-text img{
+        margin-left: 140px;
     }
 }
