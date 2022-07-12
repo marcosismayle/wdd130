@@ -38,8 +38,6 @@ header {
     background-color: var(--nav-background-color);
     max-height: 80px;
     width: 100%;
-    position: fixed;
-    z-index: 3;
 }
 
 #logo_link {
@@ -70,26 +68,20 @@ nav a:hover {
     color: var(--nav-hover-link-color);
 }
 
-/* Hero */
-
-#carousel-hero img {
-    padding-top: 80px;
-}
-
 /* Main */
 
-.home-title, .rent-items, .aboutus-title {
+.home-title, .rent-items, .aboutus-title, .contactus-title {
     text-align: center;
 }
 
-.home-title h1, .aboutus-title h1{
+.home-title h1, .aboutus-title h1, .contactus-title h1{
     font-family: var(--heading-font);
     font-size: 4em;
     color: var(--headline-color-on-color);
     margin-top: 80px;
 }
 
-.home-title p, .rent-items p, .aboutus-text p {
+.home-title p, .rent-items p, .aboutus-text p, .contactus-title p {
     color: var(--secondary-color);
     font-size: 32px;
     padding: 80px;
@@ -178,7 +170,6 @@ footer .social img {
 
 #hero img {
     width: 100%;
-    padding-top: 80px;
 }
 
 .aboutus-text img {
@@ -215,8 +206,103 @@ footer .social img {
     padding: 10px;
 }
 
+/*Contact Us*/
+
+.contactus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contactus-grid img {
+    width: 80%;
+}
+
+form h3{
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    color: var(--secondary-color);
+    font-family: var(--paragraph-font);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em var(--paragraph-font);
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: var(--secondary-color);
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+  }
+
+  #feedback {
+    background-color: aquamarine;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;  
+    position: absolute;     
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+.contactus-form {
+    background-color: #F2BB05;
+    padding: 100px;
+}
+
 @media screen and (max-width: 900px) {
-    #carousel-hero, .home, .aboutus, .items-grid , .aboutus-grid{
+    #carousel-hero, .home, .aboutus, .items-grid , .aboutus-grid, .contactus-grid{
         display: block;
     }
     #carousel-hero img, #hero img {
@@ -227,7 +313,6 @@ footer .social img {
     }
     header {
         min-height: 140px;
-        position: sticky;
     }
     nav a {
         width: 80%;
@@ -235,15 +320,19 @@ footer .social img {
         font-size: 15px;
         display: block;
     }
-    .home-title p, .rent-items p, .aboutus-text p {
+    .home-title p, .rent-items p, .aboutus-text p, .contactus-title p{
         font-size: 20px;
     }
     footer {
         margin-top: 25px;
         text-align: center;
     }
-    /*About Us */
     .aboutus-text img{
         margin-left: 140px;
+    }
+
+    .contactus-grid form{
+        margin-left: -50px;
+        margin-top: 50px;
     }
 }
