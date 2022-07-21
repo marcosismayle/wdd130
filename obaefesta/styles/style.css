@@ -36,7 +36,6 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
     background-color: var(--nav-background-color);
-    max-height: 80px;
     width: 100%;
 }
 
@@ -59,8 +58,8 @@ nav a {
     color: var(--nav-link-color);
     text-decoration: none;
     font-size: 35px;
-    padding-top: 12px;
-    margin-right: 200px;
+    padding-top: 15px;
+    margin-right: 150px;
 }
 
 nav a:hover {
@@ -163,7 +162,7 @@ footer a:hover {
 }
 
 footer .social img {
-    padding-top: 15px;
+    padding-top: 40px;
 }
 
 /* About Us */
@@ -208,6 +207,10 @@ footer .social img {
 
 /*Contact Us*/
 
+.contactus-grid form{
+    margin-bottom: 80px;
+}
+
 .contactus-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -219,7 +222,7 @@ footer .social img {
 
 form h3{
     font-family: var(--paragraph-font);
-    text-align: center;
+    text-align: left  ;
 }
 
 form {
@@ -298,7 +301,7 @@ form {
 
 .contactus-form {
     background-color: #F2BB05;
-    padding: 100px;
+    padding: 60px;
 }
 
 @media screen and (max-width: 900px) {
